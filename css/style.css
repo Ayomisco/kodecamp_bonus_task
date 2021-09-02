@@ -1,0 +1,158 @@
+body{
+    background-color: #F9FCFC;
+}
+
+/* Welcome style */
+.nav{
+    text-align: center;
+    padding: 40px;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: 0em
+
+}
+
+/* Main Page text */
+.main{
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 30px;
+    height: 50%;
+}
+
+.pic{
+    height: auto;
+    width:45%;
+    float: left;
+    padding-right: 20px;
+}
+
+#img1{
+ 
+    width: 100%;
+    left: 92px;
+    top: 196px;
+    border-radius: 0px;
+
+}
+
+.text{
+    height: auto;
+    width: 45%;
+    float: left;
+    padding-bottom: 370px;
+    
+}
+
+.wwa{
+    text-align: center;
+
+}
+
+#line{
+    height: 0px;
+    width: 67.5px;
+    border-radius: 0px;
+    border: solid #D89616;
+    align-self: center;
+}
+
+
+p{
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0em;
+text-align: left;
+}
+
+.first{
+    margin-top: 70px;
+}
+
+.contact{
+    /* margin-left: 120;
+    margin-right: 120; */
+    /* height: 657px;
+    width: 852px; */
+    left: 151px;
+    top: 789px;
+    border-radius: 10px;
+    Offset: 0px, 4px, rgba(0, 0, 0, 0.25);
+    padding: 100px;
+}
+
+/* Style for Contact Us */
+.container {
+    
+    background-color: white;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 150px;
+
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    width: 70px;
+    float: right;
+    background-color: #004DE6C2;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color:#004DE6C2;
+;
+}
+
+.row {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Button Style */
+.btn {
+   display:inline-block;
+   padding:10px 50px;
+   background-color: #3E53C3;
+   font-size:17px;
+   border:none;
+   border-radius:5px;
+   color:#bcf5e7;
+   cursor:pointer;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    justify-content: center;
+}
+
+.btn:hover {
+  background-color: #3E53C3;
+  color:white;
+}
+
+.btn-div{
+    justify-content: center;
+}

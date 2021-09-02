@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Registration Form </title>
+    <link rel="stylesheet" href="css/register.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    
+ <div class="row">
+     <div class="column left-column" >
+         <div style="padding: 50px;">
+             <span class="come_name" >KODECAMP</span>
+         </div>
+     </div>
+
+     <div class="column right-column">
+         <div class="logo-style">
+        <img src="img/logo.png" alt="" sizes="" class="logo" srcset="">
+        </div>
+        <form class="signup-form" action="/register" method="post">
+        
+            <!-- form header -->
+            
+            <div class="form-header">
+                
+                <h1>Create Account</h1>
+            </div>
+        
+            <!-- form body -->
+            <div class="form-body">
+                <!-- Firstname and Lastname -->
+                <div class="horizontal-group">
+                    <div class="form-group left">
+                        <label for="firstname" class="label-title">First name *</label>
+                        <input type="text" id="firstname" class="form-input" placeholder="enter your first name" required="required" />
+                    </div>
+                    <div class="form-group right">
+                        <label for="lastname" class="label-title">Last name</label>
+                        <input type="text" id="lastname" class="form-input" placeholder="enter your last name" />
+                    </div>
+
+                    <!-- Email  and Gender-->
+                    <div class="horizontal-group">
+
+                        <div class="form-group left">
+                            <label for="email" class="label-title">Email*</label>
+                            <input type="email" id="email" class="form-input" placeholder="enter your email" required="required">
+                        </div>
+                        
+                        <div class="form-group right">
+                            <label class="label-title">Gender</label>
+                            <select class="form-input" id="level">
+                                <option value="B">Male</option>
+                                <option value="I">Female</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- Passwrod and confirm password -->
+                    <div class="horizontal-group">
+                    
+                        <div class="form-group left">
+                            <label for="password" class="label-title">Password *</label>
+                            <input type="password" id="password" class="form-input" placeholder="enter your password" required="required">
+                        </div>
+                    
+                        <div class="form-group right">
+                            <label for="confirm-password" class="label-title">Confirm Password *</label>
+                            <input type="password" class="form-input" id="confirm-password" placeholder="enter your password again"
+                                required="required">
+                        </div>
+                    
+                    </div>
+
+
+                   <!-- Source of Income and Income -->
+                <div class="horizontal-group">
+                    <div class="form-group left">
+                        <label class="label-title">Education Level</label>
+                        <select class="form-input" id="level">
+                            <option value="B">Undergraduate</option>
+                            <option value="I">Postgraduate</option>
+                            <option value="A">High School</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group right">
+                        <label for="experience" class="label-title" style="padding-bottom: 12px;">Experience</label>
+                        <input type="range" min="20" max="100" step="5" value="0" id="experience" class="form-input"
+                            onChange="change();" style="height:28px;width:78%;padding:0; ">
+                        <span id="range-label">10%</span>
+                    </div>
+                </div>
+                
+                <!-- Bio -->
+                <div class="form-group">
+                    <label for="choose-file" class="label-title" style="text-align: left; " >Tell us about you</label>
+                    <textarea class="form-input" rows="4" cols="50" style="height:auto"></textarea>
+                </div>
+
+                <button type="submit" class="btn">Create</button>
+                </div>
+                
+                <!-- form-footer -->
+                <center>
+                <div class="form-footer">
+                    <span> Designed by <a href="ayomiscoresume.herokuapp.com/"> Ayomisco</a></span>
+                    
+                </div>
+                
+                </form>
+                
+                <!-- Script for range input label -->
+                <script>
+                    var rangeLabel = document.getElementById("range-label");
+                    var experience = document.getElementById("experience");
+
+                    function change() {
+                        rangeLabel.innerText = experience.value + "%";
+                    }
+                </script>
+    </body>
+
+</html>
